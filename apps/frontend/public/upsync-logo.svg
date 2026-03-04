@@ -1,0 +1,33 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leftFold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C6FF"/>
+      <stop offset="100%" stop-color="#0072FF"/>
+    </linearGradient>
+    <linearGradient id="rightFold" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7F00FF"/>
+      <stop offset="100%" stop-color="#E100FF"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0072FF" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Deep space/glassmorphism dark background tailored to match your site -->
+  <rect width="512" height="512" rx="140" fill="#0B0F1A" />
+  
+  <g filter="url(#glow)">
+    <!-- Left Wing (Cyan to Blue) -->
+    <path d="M 256 110 L 130 370 L 256 310 Z" fill="url(#leftFold)" />
+    
+    <!-- Right Wing (Purple to Magenta) -->
+    <path d="M 256 110 L 382 370 L 256 310 Z" fill="url(#rightFold)" />
+  </g>
+
+  <!-- Center highlight for 3D depth -->
+  <path d="M 256 110 L 256 310" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.6" />
+  
+  <!-- Energy particle/dot trailing below -->
+  <circle cx="256" cy="380" r="16" fill="#00C6FF" opacity="0.8" />
+  <circle cx="256" cy="430" r="10" fill="#E100FF" opacity="0.4" />
+</svg>

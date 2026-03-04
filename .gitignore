@@ -1,0 +1,45 @@
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Go
+apps/backend/bin/
+apps/backend/tmp/
+apps/backend/server
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+cover.out
+go.work
+
+# Node / JS
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite
+apps/frontend/dist/
+apps/frontend/build/
+apps/frontend/.vite/
+
+# Editor / System
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.swp
+*~
